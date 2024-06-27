@@ -1,0 +1,104 @@
+body {
+    font-family: 'Arial, sans-serif';
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: #f8b400;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+.header .logo {
+    position: absolute;
+    left: 50px;
+    height: 100px;
+    width: 100px;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+.hero .hero-text-left,
+.hero .hero-text-right {
+    width: 30%;
+    padding: 10px;
+}
+.hero .hero-image {
+    width: 750px;
+    max-width: 750px;
+}
+section {
+    padding: 1px;
+    text-align: center;
+}
+.cta button {
+    background-color: #d10000;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+}
+.cta button:hover {
+    background-color: #a00000;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.contact .form-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.contact button {
+    background-color: #f8b400;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+.contact button:hover {
+    background-color: #d19400;
+}
+.social-media a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+}
+@media (max-width: 600px) {
+    .cta button, .contact input, .contact textarea {
+        width: 100%;
+    }
+    .hero {
+        flex-direction: column;
+    }
+    .hero .hero-text-left,
+    .hero .hero-text-right,
+    .hero .hero-image {
+        width: 100%;
+    }
+}

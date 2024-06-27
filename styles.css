@@ -12,6 +12,7 @@ body {
     justify-content: center;
     padding: 20px;
     position: relative;
+    flex-wrap: wrap;
 }
 .header .logo {
     position: absolute;
@@ -19,12 +20,17 @@ body {
     height: 100px;
     width: 100px;
 }
+.header h1 {
+    text-align: center;
+    width: 100%;
+}
 .hero {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
     text-align: center;
+    flex-wrap: wrap;
 }
 .hero .hero-text-left,
 .hero .hero-text-right {
@@ -32,11 +38,11 @@ body {
     padding: 10px;
 }
 .hero .hero-image {
-    width: 750px;
+    width: 100%;
     max-width: 750px;
 }
 section {
-    padding: 1px;
+    padding: 20px;
     text-align: center;
 }
 .cta button {
@@ -100,5 +106,13 @@ section {
     .hero .hero-text-right,
     .hero .hero-image {
         width: 100%;
+    }
+    .header .logo {
+        position: static;
+        margin-bottom: 10px;
+    }
+    .header h1 {
+        width: 100%;
+        text-align: center;
     }
 }

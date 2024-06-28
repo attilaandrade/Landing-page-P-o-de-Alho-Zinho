@@ -17,8 +17,8 @@ body {
 .header .logo {
     position: absolute;
     left: 50px;
-    height: 100px;
-    width: 100px;
+    height: 95px;
+    width: 95px;
 }
 .header h1 {
     text-align: center;

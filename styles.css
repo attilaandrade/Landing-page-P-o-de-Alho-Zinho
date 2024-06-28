@@ -25,21 +25,12 @@ body {
     width: 100%;
 }
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 20px;
-    text-align: center;
-    flex-wrap: wrap;
-}
-.hero .hero-text-left,
-.hero .hero-text-right {
-    width: 30%;
-    padding: 10px;
 }
 .hero .hero-image {
     width: 100%;
-    max-width: 750px;
+    max-width: 700px;
+    max-height: 700px;
 }
 section {
     padding: 20px;
@@ -57,9 +48,6 @@ section {
     background-color: #a00000;
 }
 .contact form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 80%;
     margin: 0 auto;
 }

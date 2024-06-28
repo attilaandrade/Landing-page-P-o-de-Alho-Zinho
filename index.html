@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pão de Alho Zinho</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
-        <img src="/logozinho.jpeg" alt="Logo Zinho" class="logo">
+        <img src="logozinho.jpeg" alt="Logo Zinho" class="logo">
         <h1>Pão de Alho Zinho para Air Fryer</h1>
     </header>
-    <section class="hero">
+    <section class="hero d-flex flex-column flex-md-row justify-content-center align-items-center text-center">
         <h2 class="hero-text-left">Descubra o Novo Pão de Alho para Air Fryer</h2>
-        <img src="/lançamento.jpg" alt="Lançamento" class="hero-image">
+        <img src="lançamento.jpg" alt="Lançamento" class="hero-image">
         <h2 class="hero-text-right">Perfeito para sua Air Fryer!</h2>
     </section>
     <section class="fidelity-club">
@@ -25,30 +26,38 @@
         <p>3. Acumule pontos e aproveite as recompensas!</p>
     </section>
     <section class="cta">
-        <button id="register-btn">Cadastre-se Agora e Comece a Ganhar Pontos!</button>
-        <button id="download-btn">Baixe agora o ebook com receitas exclusivas!</button>
+        <h2>Cadastre-se Agora e Comece a Ganhar Pontos!</h2>
+        <form id="contact-form" class="container mt-4">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="cpf">CPF:</label>
+                <input type="text" class="form-control" id="cpf" name="cpf" required>
+            </div>
+            <div class="form-group">
+                <label for="product-code">Código do Produto:</label>
+                <input type="text" class="form-control" id="product-code" name="product-code" required>
+            </div>
+            <div class="form-group">
+                <label for="invoice-number">Número da Nota Fiscal:</label>
+                <input type="text" class="form-control" id="invoice-number" name="invoice-number" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <button type="submit" class="btn btn-warning">Enviar</button>
+        </form>
     </section>
     <section class="offers">
         <h2>Ofertas e Promoções</h2>
         <p>Cadastre-se hoje e descubra em primeira mão as novidades da Zinho</p>
+        <button id="download-btn" class="btn btn-danger">Baixe agora o ebook com receitas exclusivas!</button>
     </section>
     <section class="contact">
         <h2>Contato e Suporte</h2>
-        <form id="contact-form">
-            <div class="form-group">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Mensagem:</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit">Enviar</button>
-        </form>
         <div class="social-media">
             <h3>Siga-nos nas redes sociais:</h3>
             <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
@@ -57,6 +66,9 @@
     <footer class="footer">
         <p>Contato: contato@paodealhozinho.com.br</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
